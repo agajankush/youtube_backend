@@ -2,9 +2,9 @@
 import dotenv from "dotenv";
 import connectDB from "./db/index.js";
 
-dotenv.config({ path: "./.env" });
+dotenv.config({ path: "./.env" }); // Load environment variables from .env file in whole project
 
-connectDB();
+connectDB(); // connect to MongoDB
 
 /*
 import express from "express";

@@ -1,6 +1,9 @@
 import mongoose from "mongoose";
 import { DB_NAME } from "../constants.js";
 
+// async used because mongodb can take some time to connect
+// and we want to handle that asynchronously
+
 const connectDB = async () => {
     try {
         const connectionInstance = await mongoose.connect(
